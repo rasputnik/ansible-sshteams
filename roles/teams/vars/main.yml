@@ -1,6 +1,9 @@
 ---
 
-ssh_teams:
+# global list of SSH users by team.
+# Corresponding public key at files/pubkeys/{{ user }}.key
+#
+team_members:
   dbas:
     - john
     - paul
