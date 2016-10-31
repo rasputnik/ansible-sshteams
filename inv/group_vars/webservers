@@ -1,0 +1,6 @@
+ssh_teams:
+  - sysadmins
+  - webdevs
+
+sudo_teams:
+  - sysadmins

@@ -1,0 +1,7 @@
+ssh_teams:
+  - dbas
+  - sysadmins
+
+sudo_teams:
+  - dbas
+  - sysadmins
