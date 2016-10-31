@@ -1,0 +1,17 @@
+---
+
+teams:
+  dbas:
+    - john
+    - paul
+    - george
+    - ringo
+  sysadmins:
+    - shaggy
+    - velma
+    - fred
+    - daphne
+    - scooby
+  webdevs:
+    - salt
+    - pepa
