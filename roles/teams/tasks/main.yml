@@ -4,3 +4,8 @@
   template: src=etc/sudoers.d/teams.j2
             dest=/etc/sudoers.d/teams
             mode=0444 owner=root group=root
+
+- include: team.yml
+  with_items: "{{ ssh_teams['sysadmins'] }}"
+  loop_control:
+    loop_var: team

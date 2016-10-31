@@ -1,6 +1,6 @@
 ---
 
-teams:
+ssh_teams:
   dbas:
     - john
     - paul

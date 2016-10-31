@@ -1,0 +1,16 @@
+---
+
+# this 'sub-play' is called once for each team to 
+# create
+#
+- name: create {{ item }} account
+  user: name={{ item }} group={{ team }}
+        createhome=yes
+  with_items: "{{ team }}"
+
+# won't work in '--check' mode
+#
+# - name: set pubkey for {{ item }} user
+#   authorized_key: user={{ item }}
+#                   key="{{ lookup('file', 'files/pubkeys/{{ item }}.key') }}"
+#   with_items: "{{ team }}"
