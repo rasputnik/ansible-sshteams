@@ -1,5 +1,5 @@
-[group1]
+[webservers]
 stub1
 
-[group2]
+[databases]
 stub2
