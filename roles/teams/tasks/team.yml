@@ -2,6 +2,10 @@
 
 # the 'team' var has been set to the team to create
 #
+
+- name: create group for {{ team }}
+  group: name={{ team }}
+
 - name: create account
   user: name={{ item }} group={{ team }}
         createhome=yes

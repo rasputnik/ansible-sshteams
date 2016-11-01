@@ -5,12 +5,8 @@
             dest=/etc/sudoers.d/teams
             mode=0444 owner=root group=root
 
-- name: create group
-  group: name={{ item }}
-  with_items: "{{ ssh_teams }}"
-
 # run team.yml once for each team to create
 - include: team.yml
-  with_flattened: "{{ ssh_teams }}"
+  with_items: "{{ ssh_teams }}"
   loop_control:
     loop_var: team
