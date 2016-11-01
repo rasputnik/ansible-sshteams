@@ -8,6 +8,6 @@
   with_items: "{{ team_members[team] }}"
 
 - name: set authorized_keys
-  authorized_key: user={{ item }}
+  authorized_key: user={{ item }} exclusive=yes
                   key="{{ lookup('file', 'files/pubkeys/{{ item }}.key') }}"
   with_items: "{{ team_members[team] }}"
